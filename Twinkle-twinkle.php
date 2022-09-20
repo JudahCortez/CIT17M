@@ -5,7 +5,7 @@
 
 <body>
 	<?php
-	// FIRST EXERCISE 
+	// EXERCISE 1
 		echo "Twinkle, Twinkle little star.";
 	?>
 	
@@ -19,7 +19,7 @@
 
 	<br><br>
 	<?php
-	// SECOND EXERCISE  
+	// EXERCISE 2
 		$x = 10;
 		$y = 7;
 
@@ -32,7 +32,7 @@
 
 	<br><br>
 	<?php
-	// THIRD EXERCISE  
+	// EXERCISE 3
 		$variable = 8;
 		echo "Value is now " . $variable. ". <br>";
 
@@ -57,7 +57,7 @@
 
 	<br><br>
 	<?php
-	// FOURTH EXERCISE  
+	// EXERCISE 4
 		$name = "Harry";
 		$age = 28;
 		$value = NULL;
@@ -70,5 +70,39 @@
 		echo "<br>";
 		var_dump($value);
 	?>
+
+	<br><br>
+	<?php
+	// EXERCISE 5
+		$around = "around";
+		
+		echo 'What goes ' . $around . ', comes ' . $around . '.';
+	?>
+
+	<br><br>
+	<?php
+	// EXERCISE 6
+		for ($i = 1; $i <= 12; $i++) {
+			echo $i . '*' . $i . '=' . pow($i,2) . '<br>';
+		}
+	?>
+
+	<br><br>
+	<table align="center" width="100%">
+	<?php
+	// EXERCISE 7
+		$num = 7;
+
+		for($i = 1; $i <= 7; $i++) {	
+    		echo "<tr>";
+	
+			for($j =1; $j <= $num; $j++) {
+				$multiplication_table = ($i * $j);
+				echo "<td> $multiplication_table </td>";
+			}
+			echo "<tr/>";
+		}
+?>
+</table>
 </body>
 </html>
